@@ -77,6 +77,7 @@ i       j
           
 */
 
+/*
 let row = 5;
 
 for (let i =1; i<=row; i++){          // outer loop for row to print the star pattern
@@ -116,11 +117,69 @@ Row                            Space          star
     2*3-1 = 5
     2*4-1 = 7
 
+    */
 
-          
+
+// ################inverted pyramid Patterns  ###############3
+/*
+          * * * * * * * * *
+            * * * * * * *
+              * * * * *
+                * * *
+                  *
+*/
+
+/*      
+let row =5;
+
+for(let i =row;i>=1; i--){      //same as the pyramid pattern but here we built inverted so we start the outer loop as the reverse loop star from " i=row to 1 ".
+
+    let str =" ";
+
+    for(let j=1;j<=row- i; j++){
+
+        str+= " ";
+
+    }
+
+    for(let k=1; k<=2*i-1; k++){
+
+        str += "*" ;
+    
+    }
+
+    console.log(str);
+
+}
+
+
+
+explanation how we can print the pyramid star pattern:
+
+Row   revser row                           Space          star
+
+1      5      * * * * * * * * *             0               9
+2      4        * * * * * * *               1               7
+3      3          * * * * *                 2               5
+4      2            * * *                   3               3
+5      1              *                     4               1
+
+//##### Space = total row -current row  means space = row - i.....................outer loop jo hai woh  i = row to 1.
+// 5 to 1 loop/////
+    5-5 = 0
+    5-4 = 1
+    5-3 = 2
+    5-2 = 3
+    5-1 = 4
+//##### Star = 2*current row -1 means star = 2*i-1
+    2*5-1 = 9
+    2*4-1 = 7
+    2*3-1 = 5
+    2*2-1 = 3
+    2*1-1 = 1
 
      
-
+*/
 
 
 
