@@ -188,7 +188,7 @@ Row   revser row                           Space          star
 * * * * *
 * * * * *
 * * * * *
-*/
+
 
 let row =5;
 
@@ -205,6 +205,62 @@ for(let i =1; i<=row ; i++){
 
 }
 
+*/
+
+/*
+//        ######### Hollow  star Pattern ##############
 
 
- 
+    1 2 3 4 5
+
+1   * * * * * 
+2   *       *
+3   *       *
+4   *       *
+5   * * * * *
+
+we solve this pattern based on the mattrix 
+row belongs to "i" ---->  5
+column belongs "j" ---->  5
+
+we see that 1st cell is made of (i,j) mean (1,1) and so on vertical top pattern (1,1) (1,2) (1,3) (1,4) (1,5)
+similar ..........
+
+(1,1) (1,2) (1,3) (1,4) (1,5)      we see that "i" remains same no chang i==1
+(1,1) (2,1) (3,1) (4,1) (5,1)      we see that "j" remains same no chang j==1
+(5,1) (5,2) (5,3) (5,4) (5,5)      we see that "i" remains same no chang i==5
+(1,5) (2,5) (3,5) (4,5) (5,5)      we see that "j" remains same no chang j==5 
+
+so we apply the consdition to print the star as--------------
+
+"  i == 1 || i == 5 || j == 1 || j == 5  "
+*/ 
+
+
+let row =5;
+
+for (let i =1; i<=row; i++){
+
+    let str = "" ;
+
+    for (let j =1; j<=row; j++){
+
+        // apply the condition
+        if(i == 1 || i == 5 || j == 1 || j == 5 )
+        {
+
+            str += "*";          // print star
+
+        }
+
+        else
+        {
+
+            str += " ";           // empty string
+        }
+
+    }
+
+    console.log(str);
+}
+
