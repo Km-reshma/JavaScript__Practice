@@ -79,21 +79,47 @@ i       j
 
 let row = 5;
 
-for (let i =1; i<=row; i++){
+for (let i =1; i<=row; i++){          // outer loop for row to print the star pattern
     //console.log(i);
     let str ="";
 
-    for(let j =1;j<=row-i;j++){  // for space we use row-i bcz we have to print space in first row 4, second row 3, third row 2, fourth row 1 and fifth row 0. so we can use row-i.
+    for(let j =1;j<=row-i;j++){  // space print karta hai , for space we use row-i bcz we have to print space in first row 4, second row 3, third row 2, fourth row 1 and fifth row 0. so we can use row-i.
          //console.log(i,j);
          str += " ";
     }
 
-    for (let k=1;k<=2*i-1;k++){  // for star we use 2*i-1 bcz we have to print star in first row 1, second row 3, third row 5, fourth row 7 and fifth row 9. so we can use 2*i-1.
-         console.log(i,k);
+    for (let k=1;k<=2*i-1;k++){  // star print ke liye ,for star we use 2*i-1 bcz we have to print star in first row 1, second row 3, third row 5, fourth row 7 and fifth row 9. so we can use 2*i-1.
+         // console.log(i,k);    // number of stars in each row is 2*i-1. so we can use 2*i-1.
          str += "*";
     }
     console.log(str);
 }
+
+explanation how we can print the pyramid star pattern:
+
+Row                            Space          star
+
+1       - - - *                  4             1 
+2       - - * * *                3             3
+3       - * * * * *              2             5
+4       * * * * * * *            1             7
+
+//##### Space = total row -current row  means space = row - i
+    5-1 = 4
+    5-2 = 3
+    5-3 = 2
+    5-4 = 1
+
+//##### Star = 2*current row -1 means star = 2*i-1
+    2*1-1 = 1
+    2*2-1 = 3
+    2*3-1 = 5
+    2*4-1 = 7
+
+
+          
+
+     
 
 
 
