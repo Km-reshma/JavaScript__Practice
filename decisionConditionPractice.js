@@ -116,7 +116,7 @@ else{
 }                                                                  // 110  is divisible by 5 and 11*/
 
 
-
+/*
 //___________________Check if a character is uppercase, lowercase, digit, or special symbol________________________
 
 let ch = "0"
@@ -132,4 +132,22 @@ if((ch >= '0') && (ch <= '9')){
 }
 else{
     console.log(ch, "is the special symbol")
-}                                                     // 0 is the Digit 
+}                                                     // 0 is the Digit */
+
+
+/*
+//____________________Check if a triangle is valid (sum of angles = 180)____________________________________
+
+let a= 60;
+let b =70;
+let c = 50;
+
+if ((a+b+c) === 180 ){
+
+    console.log("triangle is valid");
+
+}
+else{
+    console.log("triangle is not valid");
+
+}                                                   // output: triangle is valid */
