@@ -114,3 +114,22 @@ if ((num % 5 === 0) && (num % 11 === 0)){
 else{
     console.log(num, " is  not divisible by 5 and 11");
 }                                                                  // 110  is divisible by 5 and 11*/
+
+
+
+//___________________Check if a character is uppercase, lowercase, digit, or special symbol________________________
+
+let ch = "0"
+
+if((ch >= 'A') && (ch <= 'Z')){
+    console.log(ch, "is the Upppercase");
+}
+if((ch >= 'a') && (ch <= 'z')){
+    console.log(ch, "is the Lowercase");
+}
+if((ch >= '0') && (ch <= '9')){
+    console.log(ch, "is the Digit");
+}
+else{
+    console.log(ch, "is the special symbol")
+}                                                     // 0 is the Digit 
