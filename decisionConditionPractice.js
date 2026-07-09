@@ -13,7 +13,7 @@ else{
 // output : Number is Negative
 */
 
-//_________________________ Check if a number is even or odd  ____________________________________
+/*//_________________________ Check if a number is even or odd  ____________________________________
 
 let num=121;
 if(num%2==0){
@@ -21,6 +21,32 @@ if(num%2==0){
 }
 else{
     console.log("Number is Odd");
-}                                                 // Number is Odd
+}                                                // Number is Odd  */
+
+/*//_____________________________Find the largest of two numbers _______________________________________
+
+let a=25;
+let b=41;
+if(a>b){
+    console.log("largest Number:", a);
+}
+else{
+    console.log("largest Number:",b);
+}                                                    // output is 41   */
 
 
+
+/*//______________________________Find the largest of three numbers ______________________________________
+
+let a = 5;
+let b = 8;
+let c = 4;
+if((a > b) && (a > c)){
+    console.log("largest Number:", a);
+}
+else if((b > a) && (b > c)){
+     console.log("largest Number:", b);
+}
+else{
+     console.log("largest Number:", c);
+}                                                 //largest Number:  8*/
