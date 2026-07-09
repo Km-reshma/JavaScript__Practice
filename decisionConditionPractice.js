@@ -50,3 +50,14 @@ else if((b > a) && (b > c)){
 else{
      console.log("largest Number:", c);
 }                                                 //largest Number:  8*/
+
+
+/*//___________________________Check if a character is a vowel or consonant______________________________________
+
+let chr = "p";
+if(chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u' ){
+    console.log(chr,"is vowels");
+}
+else{
+    console.log(chr, "is constant");
+}                                       // p is constant*/
