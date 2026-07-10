@@ -151,3 +151,24 @@ else{
     console.log("triangle is not valid");
 
 }                                                   // output: triangle is valid */
+
+
+// ________________________ Check the type of triangle (equilateral, isosceles, scalene)______________________
+
+//Equilateral: All three sides are equal and angle.
+//Isosceles: Exactly two sides are equal and angle.
+//Scalene: All three sides are different and angle.
+
+let a = 5;
+let b = 5;
+let c = 8;
+
+if((a === b) && (b === c)){
+    console.log("Triangle is Equilateral ");
+}
+else if((a === b) || (b === c) || (a===c)){
+    console.log("Triangle is Isosceles ");
+}
+else{
+    console.log("Triangle is Scalene ");
+}                                                   // Triangle is Isosceles git 
